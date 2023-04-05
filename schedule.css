@@ -7,15 +7,29 @@
     text-indent: -36px;
 }
 
-a {
-    text-decoration: none;
+.navbar {
+    overflow: hidden;
+    background-color: #1a9988;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
 body {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 10px;
+    background-color: #e9edee;
 }
 
 img {
