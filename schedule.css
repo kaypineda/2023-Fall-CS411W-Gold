@@ -1,6 +1,5 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 .apa-reference {
     padding-left: 36px;
@@ -8,28 +7,34 @@
 }
 
 .navbar {
-    overflow: hidden;
     background-color: #1a9988;
+    display: block;
+    overflow: hidden;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
 }
 
 .navbar a {
-    float: left;
-    display: block;
     color: white;
-    text-align: center;
+    display: block;
+    float: left;
+    font-family: 'Raleway';
     padding: 14px 20px;
+    text-align: center;
     text-decoration: none;
-  }
+}
 
 body {
-    /*margin-top: 10px;*/
+    background-color: #e9edee;
+    font-family: 'Lato';
     margin-left: 25px;
     margin-right: 25px;
     margin-bottom: 10px;
-    background-color: #e9edee;
+}
+
+h1 {
+    font-family: 'Raleway';
 }
 
 img {
