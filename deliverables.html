@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="schedule.css">
 
         <style>
-            img {width: 100%;}
+            img {width: 100%; height:90%}
             td {width: 50%;}
         </style>
     </head>    
@@ -24,36 +24,154 @@
             </div>
         </header>
 
-        <div class="content">
-            <h1>Process Flows</h1>
 
+        <h1>Process Flows</h1>
         <table>
             <tr>
-                <td><h2>Current Process Flow</h2></td>
-                <td><h2>Solution Process Flow</h2></td>
-            </tr>
-            <tr>
                 <td>
+                    <h2>Current Process Flow</h2>
                     <p>The current process flow when it comes to creating a schedule is as follows</p>
                     <img src="./Pictures/Current-Process-Flow.png"alt="Current Process Flow">
                 </td>
                 <td>
+                    <h2>Solution Process Flow</h2>
                     <p>The following is our solution process flow:</p>
-                     <img src="./Pictures/Solution-Process-Flow.png"alt="Solution Process Flow">
+                    <img src="./Pictures/Solution-Process-Flow.png"alt="Solution Process Flow">
                 </td>
             </tr>
         </table>
 
-        <br>
-
-        <b>UNDER CONSTRUCTION</b>
 
         <h1>Major Functional Component Diagram</h1>
+        <table>
+            <tr>
+                <td>
+                    
+                    <img style="width:50%;" src="./Pictures/MFCD.png"alt="Major Functional Component Diagram">
+                </td>
+            </tr>
+        </table>
+
 
         <h1>Competition Matrices</h1>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <h2>Main Features</h2>
+                    <img style="width:50%;" src="./Pictures/Competition-Main.png"alt="Competition Matrix: Main Features">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Basic Features</h2>
+                    <img src="./Pictures/Competition-Basic.png"alt="Competition Matrix: Basic Features">
+                </td>
+                <td>
+                    <h2>Prioritization Features</h2>
+                    <img src="./Pictures/Competition-Priority.png"alt="Competition Matrix: Prioritization Features">
+                </td>
+            </tr>
+        </table>
+
 
         <h1>Risk Matrices</h1>
-        </div>
+        <table>
+            <tr>
+                <td style="text-align: left;">
+                    <h2>Customer Risks</h2>
+                    <h3>Risk Description</h3>
+                    <ul>
+                        <li><b>C1: </b>User incorrectly inputs data</li>
+                        <ul>
+                            <li>Probability: Low</li>
+                            <li>Impact: Medium</li>
+                        </ul>
+                        <li><b>C2: </b>User doesn't know how to use system</li>
+                        <ul>
+                            <li>Probability: Low</li>
+                            <li>Impact: High</li>
+                        </ul>
+                    </ul>
+
+                    <h3>Mitigation</h3>
+                    <ul>
+                        <li><b>C1: </b>Edit data later, error notifications</li>
+                        <li><b>C2: </b>Add tutorial reference</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="./Pictures/Risk-Customer.png" alt="Risk Matrix: Customer">
+                </td>
+            </tr>
+
+            <tr>
+                <td style="text-align: left;">
+                    <h2>Technical Risks</h2>
+                    <h3>Risk Description</h3>
+                    <ul>
+                        <li><b>T1: </b>Loss of data</li>
+                        <ul>
+                            <li>Probability: Medium</li>
+                            <li>Impact: Very High</li>
+                        </ul>
+                        <li><b>T2: </b>Accidental deletion</li>
+                        <ul>
+                            <li>Probability: Very High</li>
+                            <li>Impact: High</li>
+                        </ul>
+                        <li><b>T3: </b>Loss of internet connection</li>
+                        <ul>
+                            <li>Probability: Medium</li>
+                            <li>Impact: Very High</li>
+                        </ul>
+                    </ul>
+
+                    <h3>Mitigation</h3>
+                    <ul>
+                        <li><b>T1: </b>Perform regular backups of the database</li>
+                        <li><b>T2: </b>Allow for undo option</li>
+                        <li><b>T3: </b>Allow offline editing for user</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="./Pictures/Risk-Technical.png" alt="Risk Matrix: Technical">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">
+                    <h2>Security Risks</h2>
+                    <h3>Risk Description</h3>
+                    <ul>
+                        <li><b>S1: </b>Data Compromise </li>
+                        <ul>
+                            <li>Probability: Low</li>
+                            <li>Impact: High</li>
+                        </ul>
+                        <li><b>S2: </b>User forgets password</li>
+                        <ul>
+                            <li>Probability: Medium</li>
+                            <li>Impact: High</li>
+                        </ul>
+                        <li><b>S3: </b>Malicious data input</li>
+                        <ul>
+                            <li>Probability: Medium</li>
+                            <li>Impact: High</li>
+                        </ul>
+                    </ul>
+
+                    <h3>Mitigation</h3>
+                    <ul>
+                        <li><b>S1: </b>Follow industry best practices</li>
+                        <li><b>S2: </b>Allow for password reset</li>
+                        <li><b>S3: </b>Data sanitization</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="./Pictures/Risk-Security.png" alt="Risk Matrix: Security">
+                </td>
+            </tr>
+        </table>
+        
 
         <footer>
             <br><br><hr>
