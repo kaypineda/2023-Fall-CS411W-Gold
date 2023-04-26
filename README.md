@@ -2,9 +2,4 @@
 
 Schedule Puzzle created by Group Gold
 
- 
- - [About Us](./about-us.html)
- - [Problem Description](./problem.html)
- - [Deliverables](./deliverables.html)
- - [Presentations](./presentations.html)
- - [References](./references.html)
+ [Link to site](https://kaypineda.github.io/2023-Spring-CS410-Gold/)
