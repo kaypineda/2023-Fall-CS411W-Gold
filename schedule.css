@@ -8,8 +8,7 @@
 
 .navbar {
     background-color: #1a9988;
-    display: block;
-    overflow: hidden;
+    min-height: 48px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -20,10 +19,57 @@
     display: block;
     float: left;
     font-family: 'Raleway';
-    padding: 14px 20px;
+    font-size: 16px;
+    padding: 14px 18px;
     text-align: center;
     text-decoration: none;
 }
+
+.navbar a:hover {
+    background-color: #157c6f;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-family: inherit;
+    margin: 0px;
+    max-height: 48px;
+    outline: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;    
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 
 body {
     background-color: #e9edee;
