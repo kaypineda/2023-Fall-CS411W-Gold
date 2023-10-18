@@ -8,10 +8,11 @@
 
 .navbar {
     background-color: #1a9988;
-    min-height: 48px;
+    min-height: 47px;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar a {
@@ -20,12 +21,12 @@
     float: left;
     font-family: 'Raleway';
     font-size: 16px;
-    padding: 14px 18px;
+    padding: 14px 16px;
     text-align: center;
     text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #157c6f;
 }
 
@@ -35,13 +36,14 @@
 }
 
 .dropdown .dropbtn {
-    background-color: inherit;
+    font-size: 16px;  
     border: none;
-    color: white;
-    font-family: inherit;
-    margin: 0px;
-    max-height: 48px;
     outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: Raleway;
+    margin: 0;
 }
 
 .dropdown-content {
